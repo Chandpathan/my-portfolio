@@ -1,0 +1,55 @@
+nav{
+    border-radius: 0px !important;
+    margin-bottom:-20px !important;
+
+    
+}
+
+
+.div1{
+    background-color: #534545;
+    color: #fff;
+    padding: 200px;
+}
+
+#edu1{
+    padding: 30px;
+    background-color: #faaeae;
+    box-shadow: 2px 3px 10px 2px #070505;
+}
+
+#other1{
+    padding: 30px;
+    background-color: hwb(82 37% 46%);
+    box-shadow: 2px 3px 10px 2px #040101;
+}
+
+footer{
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+#social{
+    float:right;
+    font-size: 30px;
+    padding-right: 15px;
+}
+
+.fixed
+{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+#top{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    padding: 3px;
+    background-color: rgb(116, 200, 219);
+    color: #000;
+    display: none;
+}

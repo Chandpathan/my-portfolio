@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hospital Bill Receipt</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 12px;
+			line-height: 1.5;
+			background-color: #f5f5f5;
+		}
+		.container {
+			max-width: 600px;
+			margin: 0 auto;
+			background-color:rgb(0, 213, 255);
+			padding: 20px;
+			border: 1px solid #070303;
+			box-shadow: 0 0 10px rgba(0,0,0,0.1);
+		}
+		h1 {
+			font-size: 24px;
+			margin-top: 0;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-bottom: 20px;
+		}
+		th, td {
+			padding: 10px;
+			border: 1px solid #000000;
+			text-align: left;
+		}
+		th {
+			background-color: #a4c511;
+			font-weight: normal;
+		}
+		.total {
+			font-weight: bold;
+			text-align: right;
+			padding-right: 10px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="container">
+		<span class="h1 fw-bold mb-0"><img src="https://images.drlogy.com/assets/uploads/img/practice-profile/hospitals/gallery/6195b32d79c9107f918718498a8e39bf.png"
+			style="height: 40px;"></span>
+		<h1> Tweetup Master Bill Receipt</h1>
+		<form action="/action_page.php">
+			<label for="rnumber">Receipt Number:</label>
+			<input type="number" id="rnumber" name="rnumber"><br><br>
+			<label for="pname">Patient Name:</label>
+			<input type="text" id="pname" name="pname"><br><br>
+			<label for="address">Address:</label>
+			<input type="text" id="address" name="address"><br><br>
+			<label for="date">Date:</label>
+			<input type="date" id="date" name="date"><br><br>
+		</form>
+		
+		<table>
+			<tr>
+				<th><b>Item</b></th>
+				<th><b>Quantity</b></th>
+				<th><b>Price</b></th>
+			</tr>
+			<tr>
+				<td><b>Room Charge</b></td>
+				<td><label for="quantity"></label>
+					<input type="number" id="quantity" name="quantity" ></td>
+				<td><input type="number"></td>
+			</tr>
+			<tr>
+				<td><b>Doctor Visit</b></td>
+				<td><label for="quantity"></label>
+					<input type="number" id="quantity" name="quantity"></td>
+				<td><input type="number"></td>
+			</tr>
+			<tr>
+				<td><b>Medications</b></td>
+				<td><label for="quantity"></label>
+					<input type="number" id="quantity" name="quantity"></td>
+				<td><input type="number"></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="total"><b>Total</b>:</td>
+				<td><input type="number"></td>
+			</tr>
+		</table>
+		<center><button type="Print" class="btn btn-success" style="width: 100px; color: rgb(15, 16, 15); background-color: green;">Print</button></center>
+    </div>
+	</body>
+</html>
